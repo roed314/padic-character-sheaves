@@ -66,6 +66,7 @@
 \newcommand{\uG}{\underline{G}}
 \newcommand{\uT}{\underline{T}}
 \newcommand{\uB}{\underline{B}}
+\newcommand{\uP}{\underline{P}}
 %%%%%%%%%%%%%%% NAMED OPERATORS %%%%%%%%%%%%%%%
 \DeclareMathOperator{\Gal}{Gal}
 \newcommand{\Frob}[1]{\operatorname{Fr}_{#1}}
@@ -177,6 +178,19 @@
 
 Let $K$ be a complete discrete valuation field with ring of integers $\OK$.  Let $G_K$ be a connected, reductive group over $K$ and $\uG$ be the parahoric subgroup associated to a point $x$ in the Bruhat-Tits building of $G_K$.  Let $T_K$ be a maximal torus in $G_K$, defined over $K$, with connected N\'eron model $\uT$.  We will assume that $T_K(K)$ fixes $x$ and thus that $\uT$ embeds into $\uG$, extending the inclusion $T_K \hookrightarrow G_K$ on the level of $\OK$-models.
 
-Let $B_L$ be a Borel subgroup of $G_K$, defined over a finite Galois extension $L/K$, $\uG_{\OL}$ be the base change of $\uG$ to $\OL$ and let $\uB$ be the schematic closure of $B_L$ in $\uG_{\OL}$.  Let $\uG^+$ be the $\OL$-subscheme of $\uG_{\OL}$ defined by Yu, modeling the kernel of reduction to the special fiber.
+Let $B_L$ be a Borel subgroup of $G_K$, defined over a (minimal) finite Galois extension $L/K$, $\uG_{\OL}$ be the base change of $\uG$ to $\OL$ and let $\uB$ be the schematic closure of $B_L$ in $\uG_{\OL}$.  Let $\uG^+$ be the $\OL$-subscheme of $\uG_{\OL}$ defined by Yu.  Let $\uP$ be the image of the multiplication morphism $\uB \times \uG^+ \to \uG_{\OL}$.
+
+Let $k$ be the residue field of $K$ and $l$ the residue field of $L$.  For each positive integer $r$, let $G_r$ be the level-$r$ Greenberg transform of $\uG_{\OL}$, $T_r$ the level-$r$ Greenberg transform of $\uT_{\OL}$ and $P_r$ the level-$r$ Greenberg transform of $\uP$.
+
+\begin{proposition}
+\begin{enumerate} $ $
+\item The scheme $\uP$ is a closed sub-group scheme over $\uG_{\OL}$.
+\item The quotient $G_r/P_r$ is proper.
+\end{enumerate}
+\end{proposition}
+
+\begin{remark}
+The Greenberg transform is crucial here: the quotient $\uG_{\OL} / \uP$ does not exist as an $\OL$-scheme.
+\end{remark}
 
 \end{document}
