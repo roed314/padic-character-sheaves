@@ -15,9 +15,14 @@
 *.dvi
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+*.ps
+*.pdf
+*.djvu
+
+## File system stuff
+*.DS_Store
+*.sage-backup
+*.sage-chat
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
